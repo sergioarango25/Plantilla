@@ -37,6 +37,8 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 // ── Composable ────────────────────────────────────────────────────────────────
 export function useRegisterForm() {
   const router = useRouter()
+  const showPassword = ref(false)
+  const showConfirmPassword = ref(false)
 
   // SCRUM-82: Estado de los campos del formulario
   const form = reactive({
@@ -178,6 +180,8 @@ export function useRegisterForm() {
     validateEmail,
     validatePassword,
     validateConfirmPassword,
-    submitForm
+    submitForm,
+    showPassword,
+    showConfirmPassword
   }
 }
