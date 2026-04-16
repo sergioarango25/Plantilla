@@ -284,15 +284,16 @@ body {
 }
 
 .btnEliminar {
-  border: 2px solid var(--rojo);
-  color: var(--rojo);
+  border: none;
+  color: red;
+  font-size: 20px;
   background: transparent;
   cursor: pointer;
+  animation: all 0.3s ease;
 }
 
 .btnEliminar:hover {
-  background: var(--rojo);
-  color: white;
+  transform: scale(1.1);
 }
 
 
